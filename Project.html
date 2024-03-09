@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 Lover</title>
+</head>
+<style>
+    .f1Home {
+        background: linear-gradient(109.6deg, rgba(227, 236, 62, 0.68) 11.2%, rgba(230, 29, 58, 0.78) 91.3%);
+        border-radius: 12px;
+        padding: 30px;
+        margin: 30px;
+    }
+    .creator {
+        text-align: center;
+        margin: 10px;
+        opacity: 0.7;
+        font-size: 14px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 28px;
+        color: darkred;
+        padding: 10px;
+        border: 2px solid firebrick;
+        border-radius: 10px;
+    }
+    h2{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: darkred;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    p{
+        margin: 24px;
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    small{
+        margin: 24px;
+        font-size: 14px;
+        color: darkred;
+    }
+    a{
+        font-weight: bold;
+        color: rgb(255, 217, 0);
+    }
+    button{
+        display: block;
+        margin: 30px  auto;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        background: gold;
+        color: darkred;
+        border: 1px solid gold;
+        border-radius: 10px;
+        box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+        padding: 10px 20px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background: darkred;
+        color: gold;
+        border: 1px solid darkred;
+    }
+    
+    
+
+</style>
+<body>
+    <div class="f1Home">
+    <h1>
+        The Fast Lane: Exploring Formula 1 
+    </h1>
+    <h2>
+        Let's dive into <br> the world of F1 together!
+    </h2>
+    <hr>
+    <img 
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/223/original/Ferrari-SF-24.jpg?1709989989" 
+    alt="Formula car"
+    >
+    <hr>
+    <p>
+        Formula One, commonly known as <span style="font-weight: bold">Formula 1</span>
+        or <span style="font-weight: bold">F1</span>, is the highest class of international racing
+        for open-wheel single-seater formula racing cars
+        sanctioned by the <em>Fédération Internationale de l'Automobile</em>.
+    </p>
+    <small>
+        Read more on 
+        <a href="https://en.wikipedia.org/wiki/Formula_One" target="_blank">
+            Wikipedia
+        </a>
+    </small>
+    <p>
+        How does the F1 weekend work? What's F1 Sprint? And why is it called Formula 1?
+        You've got questions and there are even more answers on Formula 1's website! 
+    </p>
+    <small>
+        Visit the 
+        <a href="https://www.formula1.com/" target="_blank">
+            F1 website
+        </a>
+        to explore more!
+    </small>
+    <br>
+    <button>
+        Get your race ticket here!
+    </button>
+    <p class="creator">
+        Coded by Negar Chamanitabriz
+      </p>
+    
+    <script>
+
+        function getTicket() {
+            let firstName = prompt("What is your first name?");
+            let lastName = prompt("What is your last name?");
+            let email = prompt("Enter you email.");
+            let age = prompt("How old are you?");
+            let ticketAmount = prompt("How many tickets are you planning to get?");
+            let grandPrix = prompt("Enter which Grand Prix you are willing to visit");
+
+            if(age >= 18){
+                alert(`Thank you ${firstName}! We'll be in touch through email...!`);
+            } else {
+                alert(`Sorry ${firstName}, you should be at least 18 years of age...`);
+            }
+        }
+
+        let TicketButton = document.querySelector("Button");
+        TicketButton.addEventListener("click", getTicket);
+    </script>
+    </div>
+</body>
+</html>
